@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sound -->
+    <audio id="clickSound" src="click.mp3"></audio>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#home" onclick="playSound()">Home</a>
+        <a href="#about" onclick="playSound()">About</a>
+        <a href="#skills" onclick="playSound()">Skills</a>
+        <a href="#projects" onclick="playSound()">Projects</a>
+        <a href="#resume" onclick="playSound()">Resume</a>
+        <a href="#contact" onclick="playSound()">Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <header id="home">
+        <h1>Janani S</h1>
+        <p>Full Stack Web Development Enthusiast</p>
+        <a href="#projects" class="btn" onclick="playSound()">View My Work</a>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="photo.jpg" alt="Profile Photo">
+        <p>
+            I am a 2nd-year IT student passionate about full stack web development.
+            I enjoy creating colorful, interactive, and responsive websites.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C</div>
+            <div class="skill">Java</div>
+            <div class="skill">SQL</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                Built a responsive personal portfolio using HTML and CSS with
+                animations and smooth navigation.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Landing Page</h3>
+            <p>
+                Designed a visually appealing landing page using modern layouts,
+                gradients, and animations.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Calculator Application</h3>
+            <p>
+                Developed a calculator using HTML, CSS, and JavaScript
+                for basic arithmetic operations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" class="btn" download onclick="playSound()">Download Resume</a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: janani@example.com | Phone: +91-XXXXXXXXXX</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Janani S. All rights reserved.
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
