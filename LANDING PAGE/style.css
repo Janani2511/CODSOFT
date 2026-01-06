@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: radial-gradient(circle at top, #0b3c5d, #021c2f);
+    color: white;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.nav-left {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-left li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+}
+
+.nav-left li a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #f7c600;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-left li a:hover::after {
+    width: 100%;
+}
+
+.nav-right button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.login {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.signin {
+    background: #f7c600;
+    color: black;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+/* TEXT */
+.hero-text {
+    width: 50%;
+    animation: fadeLeft 1.5s ease;
+}
+
+.hero-text h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+    color: #f7c600;
+}
+
+.hero-text p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #d0dce5;
+}
+
+.read {
+    margin-top: 15px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    background: #f7c600;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.read:hover {
+    transform: scale(1.1);
+}
+
+/* IMAGE */
+.hero-image {
+    width: 40%;
+    animation: fadeRight 1.5s ease;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 50% 50% 50% 20%;
+    border: 6px solid #f7c600;
+}
+
+/* ANIMATIONS */
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
